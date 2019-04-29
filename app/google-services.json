@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "474793416815",
+    "firebase_url": "https://zinga-4aa25.firebaseio.com",
+    "project_id": "zinga-4aa25",
+    "storage_bucket": "zinga-4aa25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474793416815:android:1ace31495a086b87",
+        "android_client_info": {
+          "package_name": "br.com.zinga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474793416815-pqdf6tpuvel526nqbk7tudpqmfn3q8gi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.zinga",
+            "certificate_hash": "a6023d8b9114fad5f7a53f698b98c9d39a5c2aa8"
+          }
+        },
+        {
+          "client_id": "474793416815-1bp0vlv03hgnk4ln6nj773etjv74vngl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQMbINjQnjkxY0tj7qCgLOKRvoKA0_Vf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474793416815-1bp0vlv03hgnk4ln6nj773etjv74vngl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
