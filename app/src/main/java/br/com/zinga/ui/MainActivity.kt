@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         setLightStatusBar()
         setupFragments()
 
-//        overridePendingTransition(R.anim.trans_right_out, R.anim.trans_right_in)
+//        overridePendingTransition(R.anim.trans_right_out, R.anim.trans_out)
     }
 
     private fun setupFragments() {

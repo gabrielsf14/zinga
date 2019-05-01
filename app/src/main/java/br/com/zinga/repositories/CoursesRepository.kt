@@ -1,11 +1,8 @@
 package br.com.zinga.repositories
 
-import android.util.Log
-import br.com.zinga.R
 import br.com.zinga.models.Course
 import br.com.zinga.services.GetCoursesService
 import br.com.zinga.services.GetCoursesServiceContract
-import com.google.firebase.database.*
 
 object CoursesRepository : Repository {
 

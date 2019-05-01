@@ -7,7 +7,7 @@ import com.google.firebase.database.*
 
 class GetCoursesService : GetCoursesServiceContract {
 
-    private val fbDatabase = FirebaseDatabase.getInstance().getReference("Courses")
+    private val fbDatabase = FirebaseDatabase.getInstance().getReference("Zinga/Courses")
 
     override fun getCourses(onSuccess: (ArrayList<Course>) -> Unit, onFailure: () -> Unit) {
         fbDatabase.addListenerForSingleValueEvent(object : ValueEventListener {

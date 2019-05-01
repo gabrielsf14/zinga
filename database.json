@@ -1,0 +1,35 @@
+{
+  "Zinga" : {
+    "Courses": [
+      {
+        "id":"f0e74b98-c958-403d-be9f-27a3cfa958d1",
+        "name":"Matemática"
+      },
+      {
+        "id":"3596acde-cbfe-433c-9a86-6716c555c985",
+        "name":"Física"
+      }
+    ],
+    "Materials": [
+      {
+  	    "title":"Geometria - Slides",
+        "courseId":"f0e74b98-c958-403d-be9f-27a3cfa958d1",
+        "url":"https://www.ime.usp.br/~thiagoap/emancipa104/apostila_resumao_geometria.pdf",
+        "type":0
+      },
+      {
+  	    "title":"Geometria - Vídeo-aula",
+        "courseId":"f0e74b98-c958-403d-be9f-27a3cfa958d1",
+        "url":"https://www.youtube.com/watch?v=JRsDEkW_6O0",
+        "type":1
+      },
+  	  {
+  	    "title":"Eletricidade - Slides",
+        "courseId":"3596acde-cbfe-433c-9a86-6716c555c985",
+        "url":"http://gerson.luqueta.com.br/index_arquivos/EletrSenai.pdf",
+        "type":0
+      }
+    ]
+  }
+}
+  
