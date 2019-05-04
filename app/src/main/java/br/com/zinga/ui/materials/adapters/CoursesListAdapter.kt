@@ -40,7 +40,7 @@ class CoursesListAdapter(var courses: List<Course>) : RecyclerView.Adapter<Cours
     }
 
     class CourseListViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val ivCourseImg: ImageView = itemView.findViewById(R.id.tvMaterialName)
+        val ivCourseImg: ImageView = itemView.findViewById(R.id.ivCourseImg)
         val tvCourseName: TextView = itemView.findViewById(R.id.tvCourseName)
     }
 }

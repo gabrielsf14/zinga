@@ -28,7 +28,7 @@ class MaterialsListAdapter(var materials: List<Material>) : RecyclerView.Adapter
     override fun onBindViewHolder(holder: MaterialsListViewHolder, position: Int) {
         val material = materials[position]
 
-        holder.tvMaterialName.text = material.name
+        holder.tvMaterialName.text = material.title
         holder.tvMaterialType.text = MaterialType.values()[material.type].formattedName()
 
         holder.itemView.setOnClickListener {

@@ -7,6 +7,11 @@
             android:title="@string/title_home"/>
 
     <item
+            android:id="@+id/navigation_proves"
+            android:icon="@drawable/ic_check_circle"
+            android:title="Simulados"/>
+
+    <item
             android:id="@+id/navigation_project"
             android:icon="@drawable/ic_school"
             android:title="@string/title_project"/>
