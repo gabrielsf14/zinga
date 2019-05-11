@@ -6,7 +6,7 @@
               android:orientation="vertical"
               android:gravity="center_horizontal"
               android:background="@drawable/card_background"
-              android:padding="@dimen/default_space"
+              android:padding="16dp"
               android:layout_margin="10dp"
               tools:context="br.com.zinga.ui.materials.adapters.CoursesListAdapter"
 >
@@ -24,7 +24,7 @@
                android:textSize="17sp"
                android:maxLines="2"
                android:ellipsize="end"
-               android:paddingTop="@dimen/default_space"
+               android:paddingTop="5dp"
                android:textColor="@color/colorAccent"
                android:gravity="center"
     />
