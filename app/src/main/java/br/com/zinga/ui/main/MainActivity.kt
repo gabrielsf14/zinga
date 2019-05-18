@@ -18,13 +18,14 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.navigation_home -> {
                 hideFragments()
-                toolbar.title = "Materiais"
+                toolbar.title = "Últimas notícias"
                 supportFragmentManager.beginTransaction().show(materialsFragment).commit()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_proves -> {
+            R.id.navigation_materials -> {
                 hideFragments()
-                toolbar.title = "Simulados"
+                toolbar.title = "Materiais"
+                supportFragmentManager.beginTransaction().show(materialsFragment).commit()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_project -> {
@@ -45,10 +46,10 @@ class MainActivity : AppCompatActivity() {
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
+        toolbar.title = "Últimas notícias"
+
         setLightStatusBar()
         setupFragments()
-
-//        overridePendingTransition(R.anim.trans_right_out, R.anim.trans_out)
     }
 
     private fun setupFragments() {

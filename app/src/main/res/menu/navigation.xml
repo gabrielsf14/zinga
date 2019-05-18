@@ -3,17 +3,16 @@
 
     <item
             android:id="@+id/navigation_home"
-            android:icon="@drawable/ic_book"
-            android:title="@string/title_home"/>
+            android:icon="@drawable/ic_home"
+            android:title="Início"/>
 
     <item
-            android:id="@+id/navigation_proves"
-            android:icon="@drawable/ic_check_circle"
-            android:title="Simulados"/>
-
+            android:id="@+id/navigation_materials"
+            android:icon="@drawable/ic_library_books"
+            android:title="@string/title_home"/>
     <item
             android:id="@+id/navigation_project"
-            android:icon="@drawable/ic_school"
+            android:icon="@drawable/ic_info_outline"
             android:title="@string/title_project"/>
 
 </menu>

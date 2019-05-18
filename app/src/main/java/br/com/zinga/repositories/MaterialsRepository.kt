@@ -25,7 +25,7 @@ object MaterialsRepository : Repository {
     fun getMaterials(onSuccess: (ArrayList<Material>) -> Unit, onFailure: () -> Unit) {
         getMaterialsService.getMaterials({
             materials = it
-            onSuccess(it)
+            onSuccess(materials)
         }, onFailure)
     }
 
