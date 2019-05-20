@@ -7,10 +7,12 @@ import br.com.zinga.R
 import br.com.zinga.extensions.setLightStatusBar
 import br.com.zinga.ui.about.AboutFragment
 import br.com.zinga.ui.materials.MaterialsFragment
+import br.com.zinga.ui.news.NewsFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    private var newsFragment = NewsFragment()
     private var materialsFragment = MaterialsFragment()
     private var aboutFragment = AboutFragment()
 
@@ -19,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_home -> {
                 hideFragments()
                 toolbar.title = "Últimas notícias"
-                supportFragmentManager.beginTransaction().show(materialsFragment).commit()
+                supportFragmentManager.beginTransaction().show(newsFragment).commit()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_materials -> {
@@ -30,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.navigation_project -> {
                 hideFragments()
-                toolbar.title = "Sobre o projeto"
+                toolbar.title = "Sobre"
                 supportFragmentManager.beginTransaction().show(aboutFragment).commit()
                 return@OnNavigationItemSelectedListener true
             }
@@ -53,10 +55,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupFragments() {
+        supportFragmentManager.beginTransaction().add(R.id.mainContent, newsFragment).commit()
         supportFragmentManager.beginTransaction().add(R.id.mainContent, materialsFragment).commit()
         supportFragmentManager.beginTransaction().add(R.id.mainContent, aboutFragment).commit()
+        supportFragmentManager.beginTransaction().hide(materialsFragment).commit()
         supportFragmentManager.beginTransaction().hide(aboutFragment).commit()
-        supportFragmentManager.beginTransaction().show(materialsFragment).commit()
+        supportFragmentManager.beginTransaction().show(newsFragment).commit()
     }
 
     private fun hideFragments() {

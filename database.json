@@ -70,16 +70,16 @@
         "type":0
       }
     ],
-    "News" : [
+    "News": [
       {
-        "content" : "Nossa aula aberta nessa semana será na quarta-feira, com a presença do @carloslatuff, cartunista político. Ele vai falar sobre a luta pela autodeterminação do povo palestino. Te esperamos quarta às 19h, na Herondina! #cursinhodozinga #educacaopopular",
-        "date" : "03/05/2019",
-        "title" : "Aula aberta sobre a luta pela do povo palestino."
-      },
+        "title":"Aula aberta sobre a luta pela do povo palestino.",
+        "date":"03/05/2019",
+        "content":"Nossa aula aberta nessa semana será na quarta-feira, com a presença do @carloslatuff, cartunista político. Ele vai falar sobre a luta pela autodeterminação do povo palestino. Te esperamos quarta às 19h, na Herondina! #cursinhodozinga #educacaopopular"
+      }, 
       {
-        "content" : "Na próxima sexta feita, dia 03/05, nossa aula aberta vai ser com o Alexandre Beck, criador das tirinhas do @tirinhadearmandinho. O artista vai falar sobre arte como forma de crítica e ativismo. Te esperamos as 19h, na Herondina!",
-        "date" : "23/04/2019",
-        "title" : "Aula aberta sobre arte como forma de crítica e ativismo."
+        "title":"Aula aberta sobre arte como forma de crítica e ativismo.",
+        "date":"23/04/2019",
+        "content":"Na próxima sexta feita, dia 03/05, nossa aula aberta vai ser com o Alexandre Beck, criador das tirinhas do @tirinhadearmandinho. O artista vai falar sobre arte como forma de crítica e ativismo. Te esperamos as 19h, na Herondina!"
       }
     ]
   }
