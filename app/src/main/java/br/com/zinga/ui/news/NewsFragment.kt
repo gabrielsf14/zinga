@@ -34,7 +34,7 @@ class NewsFragment : Fragment(), NewsView {
 
         newsListAdapter = NewsListAdapter(presenter.getCachedNews())
         newsListAdapter.onItemClicked = {
-            val intent = Intent(activity, CourseMaterialsActivity::class.java)
+            val intent = Intent(activity, NewsDetailActivity::class.java)
             intent.putExtra("new", it)
             startActivity(intent)
         }

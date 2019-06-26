@@ -39,7 +39,7 @@ fun Activity.clearLightStatusBar() {
 
 fun Activity.hideKeyboard(v: View) {
     val imm = this.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
-    imm.hideSoftInputFromWindow(this.currentFocus!!.windowToken, 0)
+    imm.hideSoftInputFromWindow(this.currentFocus?.windowToken, 0)
     v.clearFocus()
 }
 

@@ -15,7 +15,7 @@ class NewsListAdapter(var news: List<New>) : RecyclerView.Adapter<NewsListAdapte
     lateinit var onItemClicked: (New) -> Unit
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsListViewHolder {
-        return NewsListViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_news, parent, false));
+        return NewsListViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_news, parent, false))
     }
 
     override fun getItemCount(): Int {

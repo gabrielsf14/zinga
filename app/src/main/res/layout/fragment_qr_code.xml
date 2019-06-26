@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.qrcode.QrCodeFragment">
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/default_space"
+                android:paddingStart="@dimen/default_space"
+                android:paddingBottom="@dimen/default_space"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+            <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/llRegistration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvRegistration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Matrícula:"
+                        android:textSize="18sp"
+                        android:layout_marginTop="@dimen/default_space"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorAccent"
+                />
+
+                <ImageView
+                        android:id="@+id/ivQrCode"
+                        android:layout_gravity="center"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/llRegistrationEnter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+            >
+                <TextView
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp"
+                        android:paddingTop="@dimen/default_space"
+                        android:paddingBottom="10dp"
+                        android:text="Digite seu número de matrícula abaixo e gere seu qr code."/>
+
+                <EditText
+                        android:id="@+id/etRegistration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:hint="Digite sua matrícula"
+                        android:textSize="20sp"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                />
+
+                <Button
+                        android:id="@+id/btnGenerate"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Gerar"
+                        android:textSize="16sp"
+                        android:background="@drawable/rounded_button_bg"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btnGenerateAnother"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Gerar novamente"
+                    android:textSize="16sp"
+                    android:background="@drawable/rounded_button_bg"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/default_space"
+                    android:layout_marginBottom="10dp" />
+
+            <Button
+                    android:id="@+id/btnRead"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Ler qrcode"
+                    android:textSize="16sp"
+                    android:background="@drawable/rounded_button_bg"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="@dimen/default_space"
+                    android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>
