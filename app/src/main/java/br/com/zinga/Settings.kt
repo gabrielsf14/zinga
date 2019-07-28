@@ -1,7 +1,6 @@
 package br.com.zinga
 
 import android.content.Context
-import android.content.SharedPreferences
 
 object Settings {
 

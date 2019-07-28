@@ -59,7 +59,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-
             >
                 <TextView
                         android:fontFamily="sans-serif-medium"
@@ -79,7 +78,6 @@
                         android:hint="Digite sua matrícula"
                         android:textSize="20sp"
                         android:maxLines="1"
-                        android:inputType="number"
                         android:imeOptions="actionDone"
                 />
 

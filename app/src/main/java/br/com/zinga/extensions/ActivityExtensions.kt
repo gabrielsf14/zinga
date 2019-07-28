@@ -6,6 +6,11 @@ import android.os.Build
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
+import android.R.string.cancel
+import android.app.AlertDialog
+import android.content.DialogInterface
+
+
 
 fun Activity.getScreenHeight(): Int {
     val display = this.windowManager.defaultDisplay
@@ -50,4 +55,17 @@ fun Activity.getRootView() : View {
 fun Activity.showKeyboard() {
     val imm = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
     imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0)
+}
+
+fun Activity.showAlert(message: String) {
+    val builder1 = AlertDialog.Builder(this)
+    builder1.setMessage(message)
+    builder1.setCancelable(true)
+
+    builder1.setPositiveButton("Ok") { dialog, _ ->
+        dialog.cancel()
+    }
+
+    val alert11 = builder1.create()
+    alert11.show()
 }

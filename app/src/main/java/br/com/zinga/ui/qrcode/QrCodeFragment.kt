@@ -19,11 +19,14 @@ import com.google.zxing.integration.android.IntentIntegrator
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel
 import kotlinx.android.synthetic.main.fragment_qr_code.*
 import me.ydcool.lib.qrmodule.encoding.QrGenerator
-import android.util.Log
 import br.com.zinga.R
+import br.com.zinga.extensions.showAlert
 
 
-class QrCodeFragment : Fragment() {
+class QrCodeFragment : Fragment(), QrCodeView {
+
+    lateinit var presenter: QrCodePresenter
+    lateinit var dialog: ProgressDialog
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
@@ -32,6 +35,8 @@ class QrCodeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        presenter = QrCodePresenter(this)
 
         val registration = Settings.getRegistration(activity!!)
         if (registration.isNotEmpty()) {
@@ -81,14 +86,21 @@ class QrCodeFragment : Fragment() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
         if (result?.contents != null) {
-            Log.d("21321", result?.contents)
-            val dialog = ProgressDialog.show(activity!!, "", "Buscando matrícula...")
-            Handler().postDelayed({
-                dialog.dismiss()
-            }, 1000)
+            dialog = ProgressDialog.show(activity!!, "", "Buscando matrícula...")
+            presenter.registerPresence(result.contents)
         } else {
             super.onActivityResult(requestCode, resultCode, data)
         }
+    }
+
+    override fun showRegisterFailure() {
+        dialog.dismiss()
+        activity?.showAlert("Não foi possível registrar a presença, verifique sua conexão.")
+    }
+
+    override fun showRegisterSuccess() {
+        dialog.dismiss()
+        activity?.showAlert("Presença registrada com sucesso!")
     }
 
     private fun generateQrCode(string: String) : Bitmap {

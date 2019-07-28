@@ -15,6 +15,10 @@ class NewsDetailActivity : AppCompatActivity() {
         setLightStatusBar()
         overridePendingTransition(R.anim.trans_in, R.anim.trans_out)
 
+        toolbar.setNavigationOnClickListener {
+            onBackPressed()
+        }
+
         val new = intent.getSerializableExtra("new") as New
 
         tvNewTitle.text = new.title
