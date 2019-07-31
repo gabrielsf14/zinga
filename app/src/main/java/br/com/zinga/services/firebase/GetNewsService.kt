@@ -1,4 +1,4 @@
-package br.com.zinga.services
+package br.com.zinga.services.firebase
 
 import android.util.Log
 import br.com.zinga.models.New

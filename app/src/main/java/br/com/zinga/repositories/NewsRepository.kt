@@ -1,13 +1,14 @@
 package br.com.zinga.repositories
 
 import br.com.zinga.models.New
-import br.com.zinga.services.GetNewsService
-import br.com.zinga.services.GetNewsServiceContract
+import br.com.zinga.services.firebase.GetNewsService
+import br.com.zinga.services.firebase.GetNewsServiceContract
 
 object NewsRepository : Repository {
 
     var news: ArrayList<New> = arrayListOf()
-    var getNewsService: GetNewsServiceContract = GetNewsService()
+    var getNewsService: GetNewsServiceContract =
+        GetNewsService()
 
     override fun save() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.

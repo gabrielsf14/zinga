@@ -1,4 +1,4 @@
-package br.com.zinga.services
+package br.com.zinga.services.heroku
 
 import okhttp3.RequestBody
 import okhttp3.ResponseBody

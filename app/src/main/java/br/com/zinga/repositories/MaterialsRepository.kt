@@ -2,13 +2,14 @@ package br.com.zinga.repositories
 
 import br.com.zinga.models.Course
 import br.com.zinga.models.Material
-import br.com.zinga.services.GetMaterialsService
-import br.com.zinga.services.GetMaterialsServiceContract
+import br.com.zinga.services.firebase.GetMaterialsService
+import br.com.zinga.services.firebase.GetMaterialsServiceContract
 
 object MaterialsRepository : Repository {
 
     var materials: ArrayList<Material> = arrayListOf()
-    var getMaterialsService: GetMaterialsServiceContract = GetMaterialsService()
+    var getMaterialsService: GetMaterialsServiceContract =
+        GetMaterialsService()
 
     override fun save() {
 

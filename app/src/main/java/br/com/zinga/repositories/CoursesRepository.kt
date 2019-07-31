@@ -1,13 +1,14 @@
 package br.com.zinga.repositories
 
 import br.com.zinga.models.Course
-import br.com.zinga.services.GetCoursesService
-import br.com.zinga.services.GetCoursesServiceContract
+import br.com.zinga.services.firebase.GetCoursesService
+import br.com.zinga.services.firebase.GetCoursesServiceContract
 
 object CoursesRepository : Repository {
 
     var courses: ArrayList<Course> = arrayListOf()
-    var getCoursesService: GetCoursesServiceContract = GetCoursesService()
+    var getCoursesService: GetCoursesServiceContract =
+        GetCoursesService()
 
     override fun save() {
 
