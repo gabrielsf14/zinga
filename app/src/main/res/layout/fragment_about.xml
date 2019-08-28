@@ -26,20 +26,6 @@
             android:paddingEnd="@dimen/default_space"
             android:text="Somos um pré-vestibular gratuito e comunitário em Florianópolis. Por uma educação acessível e popular ✊"/>
 
-    <Button
-            android:id="@+id/btnSignup"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="Inscreva-se"
-            android:textSize="16sp"
-            android:background="@drawable/rounded_button_bg"
-            android:textColor="@android:color/white"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="@dimen/default_space"
-            android:layout_marginEnd="@dimen/default_space"
-    />
-
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

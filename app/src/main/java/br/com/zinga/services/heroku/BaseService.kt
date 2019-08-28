@@ -23,7 +23,11 @@ open class BaseService {
     fun request(onSuccess: () -> Unit, onFailure: () -> Unit) {
         response.enqueue(object : Callback<ResponseBody> {
             override fun onResponse(call: Call<ResponseBody>, rawResponse: retrofit2.Response<ResponseBody>) {
-                onSuccess()
+                if(rawResponse.code() in 400..598){
+                    onFailure()
+                } else {
+                    onSuccess()
+                }
             }
             override fun onFailure(call: Call<ResponseBody>, throwable: Throwable) {
                 onFailure()

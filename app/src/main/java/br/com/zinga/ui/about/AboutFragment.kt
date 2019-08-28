@@ -19,11 +19,6 @@ class AboutFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btnSignup.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://bit.ly/zinga_inscricao"))
-            startActivity(intent)
-        }
-
         btnInstagram.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/cursinhodozinga"))
             startActivity(intent)

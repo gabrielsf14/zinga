@@ -11,10 +11,12 @@ import retrofit2.Callback
 
 class RegisterPresenceService : BaseService() {
 
-    fun registerPresence(registration: String, onSuccess: () -> Unit, onFailure: () -> Unit) {
+    fun registerPresence(registration: String, username: String, password: String, onSuccess: () -> Unit, onFailure: () -> Unit) {
         val service = retrofit.create(RegisterPresenceServiceContract::class.java)
         val jsonParams = ArrayMap<String, String>()
         jsonParams["registration"] = registration
+        jsonParams["username"] = username
+        jsonParams["password"] = password
         mountBody(jsonParams)
         response = service.registerPresence(body)
         request(onSuccess, onFailure)

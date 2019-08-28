@@ -21,6 +21,7 @@ import kotlinx.android.synthetic.main.fragment_qr_code.*
 import me.ydcool.lib.qrmodule.encoding.QrGenerator
 import br.com.zinga.R
 import br.com.zinga.extensions.showAlert
+import br.com.zinga.ui.BottomSheetPassword
 
 
 class QrCodeFragment : Fragment(), QrCodeView {
@@ -87,7 +88,10 @@ class QrCodeFragment : Fragment(), QrCodeView {
         val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
         if (result?.contents != null) {
             dialog = ProgressDialog.show(activity!!, "", "Buscando matrícula...")
-            presenter.registerPresence(result.contents)
+            BottomSheetPassword.show(activity!!) { username, password ->
+                BottomSheetPassword.hide()
+                presenter.registerPresence(result.contents, username, password)
+            }
         } else {
             super.onActivityResult(requestCode, resultCode, data)
         }
@@ -95,7 +99,7 @@ class QrCodeFragment : Fragment(), QrCodeView {
 
     override fun showRegisterFailure() {
         dialog.dismiss()
-        activity?.showAlert("Não foi possível registrar a presença, verifique sua conexão.")
+        activity?.showAlert("Não foi possível registrar a presença.")
     }
 
     override fun showRegisterSuccess() {

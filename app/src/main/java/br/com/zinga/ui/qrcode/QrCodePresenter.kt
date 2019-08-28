@@ -7,8 +7,8 @@ class QrCodePresenter(var view: QrCodeView) {
     var registerPresenceService: RegisterPresenceService =
         RegisterPresenceService()
 
-    fun registerPresence(registration: String) {
-        registerPresenceService.registerPresence(registration, {
+    fun registerPresence(registration: String, username: String, password: String) {
+        registerPresenceService.registerPresence(registration, username, password, {
             view.showRegisterSuccess()
         }, {
             view.showRegisterFailure()
