@@ -22,6 +22,7 @@ import me.ydcool.lib.qrmodule.encoding.QrGenerator
 import br.com.zinga.R
 import br.com.zinga.extensions.showAlert
 import br.com.zinga.ui.BottomSheetPassword
+import br.com.zinga.utils.Preferences
 
 
 class QrCodeFragment : Fragment(), QrCodeView {
@@ -88,9 +89,17 @@ class QrCodeFragment : Fragment(), QrCodeView {
         val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
         if (result?.contents != null) {
             dialog = ProgressDialog.show(activity!!, "", "Buscando matrícula...")
-            BottomSheetPassword.show(activity!!) { username, password ->
-                BottomSheetPassword.hide()
-                presenter.registerPresence(result.contents, username, password)
+            val usernameFromPreferences = Preferences.load(activity!!, "username")
+            if (usernameFromPreferences.isNotEmpty()) {
+                val passwordFromPreferences = Preferences.load(activity!!, "password")
+                presenter.registerPresence(result.contents, usernameFromPreferences, passwordFromPreferences)
+            } else {
+                BottomSheetPassword.show(activity!!) { username, password ->
+                    Preferences.save(activity!!, "username", username)
+                    Preferences.save(activity!!, "password", password)
+                    BottomSheetPassword.hide()
+                    presenter.registerPresence(result.contents, username, password)
+                }
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data)
