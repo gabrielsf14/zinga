@@ -19,54 +19,58 @@
       },
       {
         "id":"77668a17-8be7-4e83-ba63-65ec39f43f85",
-        "name":"História"
+        "name":"Linguagens e Códigos"
       },
       {
         "id":"3f9782ca-7989-41d8-9e80-b7c548b68379",
-        "name":"Geografia"
+        "name":"Ciências Humanas"
       },
       {
         "id":"2bf813dd-c6d1-4c4b-8c1d-dc04ad44a1d3",
-        "name":"Filosofia"
-      },
-      {
-        "id":"ac7e86f7-6cfa-4b3a-a10c-b4775bf37208",
-        "name":"Sociologia"
-      },
-      {
-        "id":"eaac7f72-dc18-455c-9789-db4024b083f4",
-        "name":"Português"
-      },
-      {
-        "id":"301ce9f7-08d7-4d6a-a7bb-4014d44616f1",
-        "name":"Redação"
-      },
-      {
-        "id":"db70bb9d-5c9d-47d7-9cfb-107e824ae1c5",
-        "name":"Inglês"
-      },
-      {
-        "id":"f159c74a-09e3-434b-b2e9-db208445b3ed",
-        "name":"Espanhol"
+        "name":"Material Complementar"
       }
     ],
     "Materials": [
       {
-  	    "title":"Geometria - Slides",
-        "courseId":"f0e74b98-c958-403d-be9f-27a3cfa958d1",
-        "url":"https://www.ime.usp.br/~thiagoap/emancipa104/apostila_resumao_geometria.pdf",
+  	    "title":"Língua portuguesa e Língua inglesa",
+        "courseId":"77668a17-8be7-4e83-ba63-65ec39f43f85",
+        "url":"https://www2.unesp.br/Home/servico_ses/caderno_linguagens_e_seus_codigos.pdf",
         "type":0
       },
       {
-  	    "title":"Geometria - Vídeo-aula",
+  	    "title":"Caderno Matemática",
         "courseId":"f0e74b98-c958-403d-be9f-27a3cfa958d1",
-        "url":"https://www.youtube.com/watch?v=JRsDEkW_6O0",
-        "type":1
+        "url":"https://www2.unesp.br/Home/servico_ses/caderno_matematica.pdf",
+        "type":0
       },
-  	  {
-  	    "title":"Eletricidade - Slides",
+      {
+  	    "title":"Caderno Biologia",
+        "courseId":"3de78beb-8781-4cc7-8c59-85331ab3a385",
+        "url":"https://www2.unesp.br/Home/servico_ses/caderno_biologia.pdf",
+        "type":0
+      },
+      {
+  	    "title":"Caderno Física",
         "courseId":"3596acde-cbfe-433c-9a86-6716c555c985",
-        "url":"http://gerson.luqueta.com.br/index_arquivos/EletrSenai.pdf",
+        "url":"https://www2.unesp.br/Home/servico_ses/caderno_fisica.pdf",
+        "type":0
+      },
+      {
+  	    "title":"Caderno Química",
+        "courseId":"4462bdd8-3209-4226-b0fd-df4bd2057440",
+        "url":"https://www2.unesp.br/Home/servico_ses/caderno_quimica.pdf",
+        "type":0
+      },
+      {
+  	    "title":"Filosofia, Geografia, História e Sociologia",
+        "courseId":"3f9782ca-7989-41d8-9e80-b7c548b68379",
+        "url":"https://www2.unesp.br/Home/servico_ses/caderno_ciencias_-humanas.pdf",
+        "type":0
+      },
+      {
+  	    "title":"Caderno de Material Complementar e de Apoio",
+        "courseId":"2bf813dd-c6d1-4c4b-8c1d-dc04ad44a1d3",
+        "url":"https://www2.unesp.br/Home/servico_ses/caderno-7---exercicios-1.pdf",
         "type":0
       }
     ],

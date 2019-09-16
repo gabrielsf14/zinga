@@ -15,7 +15,7 @@ class CoursesListAdapter(var courses: List<Course>) : RecyclerView.Adapter<Cours
     lateinit var onItemClicked: (Course) -> Unit
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CourseListViewHolder {
-        return CourseListViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_course, parent, false));
+        return CourseListViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_course, parent, false))
     }
 
     override fun getItemCount(): Int {
@@ -36,14 +36,8 @@ class CoursesListAdapter(var courses: List<Course>) : RecyclerView.Adapter<Cours
             "Matemática" -> holder.ivCourseImg.setImageResource(R.drawable.mtm)
             "Química" -> holder.ivCourseImg.setImageResource(R.drawable.quimica)
             "Biologia" -> holder.ivCourseImg.setImageResource(R.drawable.bio)
-            "História" -> holder.ivCourseImg.setImageResource(R.drawable.history)
-            "Geografia" -> holder.ivCourseImg.setImageResource(R.drawable.geo)
-            "Filosofia" -> holder.ivCourseImg.setImageResource(R.drawable.filosofia)
-            "Sociologia" -> holder.ivCourseImg.setImageResource(R.drawable.sociology)
-            "Português" -> holder.ivCourseImg.setImageResource(R.drawable.portugues)
-            "Redação" -> holder.ivCourseImg.setImageResource(R.drawable.redacao)
-            "Inglês" -> holder.ivCourseImg.setImageResource(R.drawable.translate)
-            "Espanhol" -> holder.ivCourseImg.setImageResource(R.drawable.translate)
+            "Ciências Humanas" -> holder.ivCourseImg.setImageResource(R.drawable.filosofia)
+            "Linguagens e Códigos" -> holder.ivCourseImg.setImageResource(R.drawable.portugues)
             else -> {}
         }
         holder.ivCourseImg.setColorFilter(ContextCompat.getColor(holder.ivCourseImg.context, R.color.colorAccent))
