@@ -18,7 +18,7 @@ class MaterialsListAdapter(var materials: List<Material>) : RecyclerView.Adapter
     lateinit var onItemClicked: (Material) -> Unit
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MaterialsListViewHolder {
-        return MaterialsListViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_material, parent, false));
+        return MaterialsListViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_material, parent, false))
     }
 
     override fun getItemCount(): Int {

@@ -32,6 +32,60 @@
     ],
     "Materials": [
       {
+  	    "title":"Aula introdutória - O que é Geografia?",
+        "courseId":"3f9782ca-7989-41d8-9e80-b7c548b68379",
+        "url":"https://docs.google.com/presentation/d/1CqdlHX9im0m4_XS8qqksccbtqL20i0vKQGqruEtHcn4/edit?usp=sharingf",
+        "type":0
+      },
+      {
+  	    "title":"Cartografia/Projeções Cartográficas",
+        "courseId":"3f9782ca-7989-41d8-9e80-b7c548b68379",
+        "url":"https://docs.google.com/presentation/d/1A0WpEBCP4ORfsDNfFCTEsBv6_Vo8m5_2wTlod2-2gus/edit?usp=sharing",
+        "type":0
+      },
+      {
+  	    "title":"Formação e Estrutura da Terra",
+        "courseId":"3f9782ca-7989-41d8-9e80-b7c548b68379",
+        "url":"https://docs.google.com/presentation/d/1Mpd6AvTyMvll3pGZekeIAax-MlfzTXHuRypPkeXRS2E/edit?usp=sharing",
+        "type":0
+      },
+      {
+  	    "title":"Globalização",
+        "courseId":"3f9782ca-7989-41d8-9e80-b7c548b68379",
+        "url":"https://drive.google.com/file/d/14uyr4Dc8zOGc_ej3OXeRDc793MrooYLF/view?usp=sharing",
+        "type":0
+      },
+      {
+  	    "title":"Ecologia",
+        "courseId":"3f9782ca-7989-41d8-9e80-b7c548b68379",
+        "url":"https://docs.google.com/presentation/d/10Fl-R1y-J8fEvN9hvSoW_fAv-Io1APhVsa_XQXvMjZw/edit?usp=sharing",
+        "type":0
+      },
+      {
+  	    "title":"Antiga e Nova Ordem Mundial",
+        "courseId":"3f9782ca-7989-41d8-9e80-b7c548b68379",
+        "url":"https://drive.google.com/file/d/1YE6Jp2Bi8BwjWzBG5YZK2x7IOhjqSt_3/view?usp=sharing",
+        "type":0
+      },
+      {
+  	    "title":"Blocos Econômicos - 01",
+        "courseId":"3f9782ca-7989-41d8-9e80-b7c548b68379",
+        "url":"https://drive.google.com/file/d/15rz5YRi79Sm_0loynbehQ0kr2M8FrIIj/view?usp=sharing        ",
+        "type":0
+      },
+      {
+  	    "title":"Blocos econômicos - 02",
+        "courseId":"3f9782ca-7989-41d8-9e80-b7c548b68379",
+        "url":"https://drive.google.com/file/d/15rz5YRi79Sm_0loynbehQ0kr2M8FrIIj/view?usp=sharing",
+        "type":0
+      },
+      {
+  	    "title":"Brexit",
+        "courseId":"3f9782ca-7989-41d8-9e80-b7c548b68379",
+        "url":"https://docs.google.com/presentation/d/18YtZ3z9_0VR3qmNhb1tgYDQbHfOlLiAC3AvdCBF1g1E/edit?usp=drivesdk",
+        "type":0
+      },
+      {
   	    "title":"Língua portuguesa e Língua inglesa",
         "courseId":"77668a17-8be7-4e83-ba63-65ec39f43f85",
         "url":"https://www2.unesp.br/Home/servico_ses/caderno_linguagens_e_seus_codigos.pdf",
